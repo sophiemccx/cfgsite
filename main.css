@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.line {
+    border-width: 2px;
+    border-radius: 100px;
+    margin-top: 20px;
+
+}
+
+.row1 {
+    margin-left: 80pt;
+    margin-top: 20pt;
+    margin-right: 80pt;
+
+}
+
+.row3 {
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+
+
+
+}
+
+.row4 {
+
+    text-align: center;
+}
+
+.row5 {
+
+    text-align: center;
+}
+
+
+
+.nextbite {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+
+
+}
+
+.map {
+    margin-left: 200px;
+
+
+
+}
+
+#mapcontainer {
+    margin-top: 80px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+
+
+}
+
+
+.pin {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 0;
+
+}
+
+.buttons {
+
+    margin-top: 200px;
+    margin-right: 300px;
+
+
+
+}
+
+.windsor {
+    position: absolute;
+    bottom: 120px;
+    right: 60px;
+    width: 100px;
+    height: 30px;
+}
+
+.london {
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+    width: 100px;
+    height: 30px;
+
+}
+
+.glasgow {
+    position: absolute;
+    bottom: 400px;
+    right: 195 px;
+    width: 100px;
+    height: 30px;
+}
+
+.liverpool {
+    position: absolute;
+    bottom: 243px;
+    right: 140px;
+    width: 100px;
+    height: 30px;
+}
+
+.location {
+    background-color: #DD7438;
+    padding-left: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+
+.viewall {
+    background-color: #156064;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+
+
+}
+
+.viewall2 {
+    background-color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 150px;
+   
+
+
+
+
+}
+
+.form-control {
+    height: 30pt;
+    margin-top: 7pt;
+
+}
+
+.nav-item {
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.heading {
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 30px;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+.toppicks {
+    background-color: #156064;
+    padding-left: 90pt;
+    padding-right: 90pt;
+    padding-bottom: 40pt;
+    padding-top: 10pt;
+    margin-top: 100pt;
+
+}
+
+.card1,
+.card2 {
+    border: 0px;
+    border-radius: 0%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+
+}
+
+.card2-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+
+
+
+
+}
+
+.card-image-top {
+    border: 0px;
+    border-radius: 0%;
+    overflow: hidden;
+}
+
+.card-location {
+    font-weight: 500;
+
+}
+
+.card-user {
+    text-align: end;
+    margin-top: 50px;
+    margin-right: 5px;
+    color: grey;
+
+
+
+
+}
+
+.user {
+    align-items: center;
+    text-align: center;
+    
+
+
+
+}
+
+.user-img {
+    border-radius: 50%;
+    text-align: center;
+    margin-left:5px;
+
+
+
+}
+
+.user-name {
+
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+
+.helpsection {
+    background-color: #DD7438;
+    padding-left: 40pt;
+    padding-right: 0pt;
+    padding-bottom: 40pt;
+    padding-top: 40pt;
+   
+
+
+}
+
+.help{
+
+    align-items: center;
+}
+
+footer {
+    padding-top: 40pt;
+    background-color: white;
+    margin-left: 100pt;
+    padding-bottom: 100px;
+
+}
+
+.fheading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #134446;
+
+
+
+}
+
+.white {
+    color: white;
+}
+
+
+
+
+.search{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    padding: 30px;
+    border-radius: 65px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.submit{
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    
+}
+.search-txt{
+    width: 0;
+    font-size: 36px;
+    border: none;
+    background: transparent;
+    outline: none;
+    transition: 1s;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.252);
+}
+.active{
+    background: white;
+}
+.active .submit{
+    color: black;
+    float: right;
+}
+.active .search-txt{
+  width: 350px;
+  padding: 0 20px;
+}

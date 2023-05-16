@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='overlay-style.css'>
+<script async src='https://kit.fontawesome.com/YOUR_KIT_CODE.js' crossorigin='anonymous'></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script defer src='overlay-script.js'></script>
+
+</head>
+<body>
+<div id='eggham-overlay' class="eggham-overlay overlay">
+    <div class='overlay-box'>
+
+        <!-- close button -->
+        <a onclick='off("eggham-overlay");' id='close' class='button2' href='#'>&#10006;</a>
+
+
+        <!-- gallery -->
+        <div class='overlay-gallery'>
+            <img id='overlay-main-img' src='./overlay-pics/Cafes/Eggham on Toast/eggham_01.png'/>
+            <div class='overlay-thumbnails'>
+                <img class='overlay-thumbnail' src='./overlay-pics/Cafes/Eggham on Toast/eggham_02.png' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Cafes/Eggham on Toast/eggham_03.png' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Cafes/Eggham on Toast/eggham_04.png' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Cafes/Eggham on Toast/eggham_05.jpeg' />
+            </div>
+        </div>
+
+        <!-- description box -->
+        <div class='overlay-description'>
+            <h1>Eggham on Toast</h1>
+            <hr>
+
+            <!-- address with start - line -->
+            <div class='overlay-container'>
+
+                <!-- address -->
+                <div class='overlay-left'>
+                    <img src='./icons/pin.svg' width='12px' id='pin-icon'>                     
+                    <p id='address'>Egham Hill, Egham TW20 0BQ</p>
+                </div>
+
+                <!-- stars rating -->
+                <div class='overlay-right'>
+                    <span class='overlay-stars'><span id='rating-star'>&#9733;&#9733;</span>&#9733;&#9733;&#9733;</span>
+                </div>
+            </div>
+
+            <!-- category - fliter -->
+            <div class='overlay-filter-button'>
+                <button id='category-pub' href='./categories.html'>Cafe</button>
+            </div>
+
+            <!-- description -->
+            <div class='overlay-description'>
+                <p>This little gem is located in the heart of Egham, it's a great place to visit with excellent friendly staff. With a wide range of delicious dishes from English/American style breakfasts, this cafe was one of the first cafe of its kind it Egham. Its great place to brunch with friends, have a discreet business breakfast or lunch meeting or just to come and relax and read the paper.</p>
+            </div>
+
+            <!-- highlights -->
+            <div class='overlay-recommendation'>
+                <h3>Recommendations</h3>
+                <div class='highlights'>
+                    <button class='tag'>Veggie Breakfast</button>
+                    <button class='tag'>Halloumi Burger</button>
+                    <button class='tag'>Falafel Wrap</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

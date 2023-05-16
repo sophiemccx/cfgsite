@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='overlay-style.css'>
+<script async src='https://kit.fontawesome.com/YOUR_KIT_CODE.js' crossorigin='anonymous'></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script defer src='overlay-script.js'></script>
+
+</head>
+<body>
+<div id='dozo-overlay' class="dozo-overlay overlay">
+    <div class='overlay-box'>
+
+        <!-- close button -->
+        <a onclick='off("dozo-overlay");' id='close' class='button2' href='#'>&#10006;</a>
+
+
+        <!-- gallery -->
+        <div class='overlay-gallery'>
+            <img id='overlay-main-img' src='./overlay-pics/Restaurants/DOZO/Picture 1.png'/>
+            <div class='overlay-thumbnails'>
+                <img class='overlay-thumbnail' src='./overlay-pics/Restaurants/DOZO/Picture 2.png' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Restaurants/DOZO/Picture 3.png' />
+            </div>
+        </div>
+
+        <!-- description box -->
+        <div class='overlay-description'>
+            <h1>DOZO Soho</h1>
+            <hr>
+
+            <!-- address with start - line -->
+            <div class='overlay-container'>
+
+                <!-- address -->
+                <div class='overlay-left'>
+                    <img src='./icons/pin.svg' width='12px' id='pin-icon'>                     
+                    <p id='address'>32 Old Compton St, London W1D 4TP</p>
+                </div>
+
+                <!-- stars rating -->
+                <div class='overlay-right'>
+                    <span class='overlay-stars'><span id='rating-star'>&#9733;&#9733;</span>&#9733;&#9733;&#9733;</span>
+                </div>
+            </div>
+
+            <!-- category - fliter -->
+            <div class='overlay-filter-button'>
+                <button id='category-pub' href='./categories.html'>Restaurant</button>
+            </div>
+
+            <!-- description -->
+            <div class='overlay-description'>
+                <p>Dozo is the brainchild of an experienced restaurateur in London. First established in South Kensington in 2011, and has been serving premium-quality, contemporary, fine Japanese cuisine ever since.</p>
+            </div>
+
+            <!-- highlights -->
+            <div class='overlay-recommendation'>
+                <h3>Recommendations</h3>
+                <div class='highlights'>
+                    <button class='tag'>Volcano Maki</button>
+                    <button class='tag'>Unagi Don</button>
+                    <button class='tag'>Tuna Tartar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

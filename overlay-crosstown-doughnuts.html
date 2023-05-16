@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='overlay-style.css'>
+<script async src='https://kit.fontawesome.com/YOUR_KIT_CODE.js' crossorigin='anonymous'></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script defer src='overlay-script.js'></script>
+</head>
+<body>
+<div id='crosstown-doughnuts-overlay' class="crosstown-doughnuts-overlay overlay">
+    <div class='overlay-box'>
+
+        <!-- close button -->
+        <a onclick='off("crosstown-doughnuts-overlay");' id='close' class='button2' href='#'>&#10006;</a>
+
+
+        <!-- gallery -->
+        <div class='overlay-gallery'>
+            <img id='overlay-main-img' src='./overlay-pics/Desserts/Crosstown Doughnuts/Crosstown_1.jpg'/>
+            <div class='overlay-thumbnails'>
+                <img class='overlay-thumbnail' src='./overlay-pics/Desserts/Crosstown Doughnuts/Crosstown_2.jpg' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Desserts/Crosstown Doughnuts/Crosstown_3.jpeg' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Desserts/Crosstown Doughnuts/Crosstown_Rec_Cinnamon.jpg' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Desserts/Crosstown Doughnuts/Crosstown_Rec_Matcha.jpg' />
+            </div>
+        </div>
+
+        <!-- description box -->
+        <div class='overlay-description'>
+            <h1>Crosstown Doughnuts</h1>
+            <hr>
+
+            <!-- address with start - line -->
+            <div class='overlay-container'>
+
+                <!-- address -->
+                <div class='overlay-left'>
+                    <img src='./icons/pin.svg' width='12px' id='pin-icon'>                     
+                    <p id='address'>157 Brick Lane, London E1 6SB</p>
+                </div>
+
+                <!-- stars rating -->
+                <div class='overlay-right'>
+                    <span class='overlay-stars'><span id='rating-star'>&#9733;&#9733;</span>&#9733;&#9733;&#9733;</span>
+                </div>
+            </div>
+
+            <!-- category - fliter -->
+            <div class='overlay-filter-button'>
+                <button id='category-pub' href='./categories.html'>Desserts</button>
+            </div>
+
+            <!-- description -->
+            <div class='overlay-description'>
+                <p>Crosstown Doughnuts are dotted across London, from Victoria to Spitalfields. With a wide selection of sweet treats, from doughnuts to cookies, and with great options for vegans. Crosstown rolls all their own dough by hand, with all the fillings, jams, and glazes also made by them. You’ll also find delicious cookies with flavours including: peanut butter and chocolate chip, oat and apricot, and chocolate chip.</p>
+            </div>
+
+            <!-- highlights -->
+            <div class='overlay-recommendation'>
+                <h3>Recommendations</h3>
+                <div class='highlights'>
+                    <button class='tag'>Matcha tea doughnut</button>
+                    <button class='tag'>Peanut butter and blackberry compote</button>
+                    <button class='tag'>Sri Lankan cinnamon sugar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

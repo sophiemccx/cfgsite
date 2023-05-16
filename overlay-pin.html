@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='overlay-style.css'>
+<script async src='https://kit.fontawesome.com/YOUR_KIT_CODE.js' crossorigin='anonymous'></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script defer src='overlay-script.js'></script>
+
+</head>
+<body>
+<div id='pin-overlay' class="pin-overlay overlay">
+    <div class='overlay-box'>
+
+        <!-- close button -->
+        <a onclick='off("pin-overlay");' id='close' class='button2' href='#'>&#10006;</a>
+
+
+        <!-- gallery -->
+        <div class='overlay-gallery'>
+            <img id='overlay-main-img' src='./overlay-pics/Bars/Pins Social Club/069-e1625130256108.jpg'/>
+            <div class='overlay-thumbnails'>
+                <img class='overlay-thumbnail' src='./overlay-pics/Bars/Pins Social Club/0d0265952ae4430a9452d5c28e62307f.jpg' />
+                <img class='overlay-thumbnail' src='./overlay-pics/Bars/Pins Social Club/PINS-social-cocktails1.jpg' />
+            </div>
+        </div>
+
+        <!-- description box -->
+        <div class='overlay-description'>
+            <h1>Pins Social Club</h1>
+            <hr>
+
+            <!-- address with start - line -->
+            <div class='overlay-container'>
+
+                <!-- address -->
+                <div class='overlay-left'>
+                    <img src='./icons/pin.svg' width='12px' id='pin-icon'>                     
+                    <p id='address'>45 - 61 Duke St, Liverpool L1 5AP</p>
+                </div>
+
+                <!-- stars rating -->
+                <div class='overlay-right'>
+                    <span class='overlay-stars'><span id='rating-star'>&#9733;&#9733;</span>&#9733;&#9733;&#9733;</span>
+                </div>
+            </div>
+
+            <!-- category - fliter -->
+            <div class='overlay-filter-button'>
+                <button id='category-pub' href='./categories.html'>Pub</button>
+            </div>
+
+            <!-- description -->
+            <div class='overlay-description'>
+                <p>PINS Social Club is the place you need to be if you want to have fun. They aren’t just a place to go for a drink, even if their drinks are incredible, they’re a venue for a full evening event.</p>
+
+                    <p>Drinks they do include Blood Orangecello, The Little Lebowski, If you fancy something to eat they do Sunday Roasts, Brunch, Pizzas, Burgers and so much more. Happy Hour is Monday to Fridays, 5-7pm, perfect for an after work catch up.
+                    </p>
+            </div>
+
+            <!-- highlights -->
+            <div class='overlay-recommendation'>
+                <h3>Recommendations</h3>
+                <div class='highlights'>
+                    <button class='tag'>Not so lobster roll</button>
+                    <button class='tag'>Cacio e Pepe Mac&Cheese</button>
+                    <button class='tag'>Pin Social Club</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

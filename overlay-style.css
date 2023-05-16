@@ -1,0 +1,206 @@
+/* basic */
+
+.overlay-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+body{
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+
+    /* identical to box height */
+    letter-spacing: 0.1em;
+}
+
+h3{
+    font-style: normal;
+    padding: 5pt 0 2pt 0;
+    font-weight: 700;
+    font-size: 18px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+}
+
+hr{
+    margin-top: -10pt;
+    color: aliceblue;
+}
+
+
+/* ovelay box style */
+
+
+.overlay-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2% 4% 2% 2%;
+    width: 60%;
+    background-color: #ECECEC;
+    z-index: 9999; /* make sure it's on top of the overlay */
+  }
+
+
+  #overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* transparent black */
+    z-index: 1; /* make sure it's on top of other elements */
+  }
+
+
+  /* category - filter */
+
+#category-pub{
+    padding: 2pt 20pt 2pt 20pt;
+    background-color: #DD386A;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+
+
+}
+
+
+/* close button */
+
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    font: normal;
+    color: black;
+    text-decoration: none;
+
+}
+
+/* gallery style */
+
+  .overlay-gallery {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .overlay-gallery img {
+    width: 95%;
+    height: 300pt;
+    margin-bottom: 10px;
+    cursor:auto;
+    object-fit: cover;
+  }
+  
+  .overlay-thumbnails img {
+    width: 80px;
+    height: 80px;
+    float:left;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+
+  /* address with stars line */
+
+  #address{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+
+#pin-icon{
+    margin-right: 5pt;
+}
+  
+ .overlay-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .overlay-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .overlay-left i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .overlay-left p {
+    margin: 0;
+  }
+  
+  .overlay-right {
+    margin-left: auto;
+  }
+  
+  .overlay-stars {
+    font-size: 20px;
+    color: #9d9ea3;
+  }
+
+  #rating-star {
+    font-size: 20px;
+    color: #DD386A;
+  }
+
+
+
+  /* highlights style */
+
+  .highlights{
+    display:inline;
+    align-items: center;
+    /* margin-right: 2pt; */
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+  }
+
+  .tag{
+    width: 100pt;
+    background-color: #134446;
+    border: none;
+    color: #fff;
+    padding: 2pt 10pt 2pt 10pt;
+    border-radius: 5px;
+  }

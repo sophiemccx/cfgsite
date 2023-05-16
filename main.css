@@ -123,7 +123,8 @@ body {
 
 .location {
     background-color: #DD7438;
-    padding-left: 270px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -171,6 +172,10 @@ body {
 
 }
 
+.button{
+    margin-top: 10px;
+}
+
 .nav-item {
     font-weight: 500;
     font-size: 20px;
@@ -182,18 +187,14 @@ body {
     font-weight: 600;
     font-size: 25px;
     padding-bottom: 30px;
+}
 
-
-
-
-
-
+.dev{
+    margin-left: 10pt;
 
 
 
 }
-
-
 
 .toppicks {
     background-color: #156064;
@@ -247,6 +248,17 @@ body {
 .card-user {
     text-align: end;
     margin-top: 50px;
+    margin-right: 5px;
+    color: grey;
+
+
+
+
+}
+
+.card-user2{
+    text-align: end;
+    margin-top: 15px;
     margin-right: 5px;
     color: grey;
 
@@ -316,52 +328,19 @@ footer {
 
 }
 
+.footerlinks{
+    text-decoration: none;
+    color: black;
+  
+}
+
+
 .white {
     color: white;
 }
 
+.link{
 
+    text-decoration: none;
 
-
-.search{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    background: black;
-    padding: 30px;
-    border-radius: 65px;
-    border: none;
-    display: flex;
-    align-items: center;
-}
-.submit{
-    font-size: 40px;
-    cursor: pointer;
-    color: white;
-    background: none;
-    border: none;
-    
-}
-.search-txt{
-    width: 0;
-    font-size: 36px;
-    border: none;
-    background: transparent;
-    outline: none;
-    transition: 1s;
-}
-::placeholder{
-    color: rgba(0, 0, 0, 0.252);
-}
-.active{
-    background: white;
-}
-.active .submit{
-    color: black;
-    float: right;
-}
-.active .search-txt{
-  width: 350px;
-  padding: 0 20px;
 }

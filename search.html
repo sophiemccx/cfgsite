@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <!-- Bootstrap link -->
+
+
+
+
+    <!-- External CSS Stylesheet -->
+
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="bootstrap-iso.css">
+
+    <!-- font Montserrat Bold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- font Montserrat Semibold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- font Montserrat Medium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- font Grape Nuts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+
+
+
+        <nav>
+
+            <li>
+                <a href=index.html>
+                    <img src="images/bmlogo.svg" alt="BiteMap" width="205" height="64">
+                </a>
+            </li>
+
+            <ul>
+                <li>
+                    <a aria-current="page" href="sbymap.html">search by map</a>
+                </li>
+
+                <li>
+                    <a href="aboutus.html">about us</a>
+                </li>
+
+                <li>
+
+                    <a href="search.html"> <img class="button" src="images/search.svg" alt="Search Icon" width="30"
+                            height="40"></img></a>
+                </li>
+                </ul>
+            
+                
+
+                <br><br><br><br>
+                <hr class="line">
+
+        </nav>
+        
+        
+
+
+    </header>
+
+    <body>
+        <div class="items">
+            <p class="heading3">SEARCH</p>
+            <p class="heading4">Filter</p>
+
+
+            <!-- FILTER BUTTONS-->
+            <div id="buttons">
+                <button class="btn" data-category="all" style="background-color: #676767;" onclick="showAll()">SHOW
+                    ALL</button>
+                <button class="btn" data-category="cafe" style="background-color: #38BFDD;">CAFÉS</button>
+                <button class="btn" data-category="restaurant" style="background-color: #DDCD38;">RESTAURANTS</button>
+                <button class="btn" data-category="dessert" style="background-color: #DD386A;">DESSERTS</button>
+                <button class="btn" data-category="pub" id="pub-btn" style="background-color: #C6DD38;">BARS</button>
+            </div>
+        </div>
+
+
+        <!-- My attempt at making the filter buttons interactive with js, didn't work -->
+        <!--         <div id="buttons">
+            <button class="btn" style="background-color: #676767;" onclick="filterObjects('all')">SHOW ALL</button>
+            <button class="btn" style="background-color: #38BFDD;" onclick="filterObjects('cafes')">CAFÉS</button>
+            <button class="btn" style="background-color: #DDCD38;" onclick="filterObjects('restaurants')">RESTAURANTS</button>
+            <button class="btn" style="background-color: #DD386A;" onclick="filterObjects('desserts')">DESSERTS</button>
+            <button class="btn" style="background-color: #C6DD38;" onclick="filterObjects('bars')">BARS</button>
+        </div> -->
+
+
+
+        <!-- LOCATION RESULTS -->
+
+        <div class="objects">
+
+            <div class="container">
+
+                <div class="card cafe">
+                    <div class="imgbox">
+                        <button onclick='on("./overlay-apple-butter.html", "apple-butter-overlay")'><img
+                                src="IMG/Thumbnails/Apple-Butter.png" width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>APPLE BUTTER</h3>
+                            <p>London</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>Apple Butter Café offers a warm welcome for all with its all-day dining menu, cosy yet
+                                sophisticated surroundings in amongst an iconic and ultimately instagrammable apple
+                                tree, planted centre stage for all to see and enjoy.
+
+                                The concept has been created by successful Middle Eastern-born business operators and
+                                brothers Saleh and Mohammad Alayan alongside Faycal Abdel Khalek, each delivering
+                                something special and unique to its ultimate creation. Collectively bringing years of
+                                experience, passion and success with all things hospitality, the trio chose the heart of
+                                London to launch their debut east meets west fusion café concept.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Xuecong.png" width="30">
+                            <p>Xuecong</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card dessert">
+                    <div class="imgbox">
+                        <button onclick='on("./overlay-crosstown-doughnuts.html", "crosstown-doughnuts-overlay")'><img
+                                src="IMG/Thumbnails/Crosstown_1.jpg" width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>CROSSTOWN DOUGHNUTS</h3>
+                            <p>London</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>Crosstown Doughnuts are dotted across London, from Victoria to Spitalfields. With a wide
+                                selection of sweet treats, from doughnuts to cookies, and with great options for vegans.
+                                Crosstown rolls all their own dough by hand, with all the fillings, jams, and glazes
+                                also made by them. You'll also find delicious cookies with flavours including: peanut
+                                butter and chocolate chip, oat and apricot, and chocolate chip.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Jess.jpg" width="30">
+                            <p>Jess</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card restaurant">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-dozo.html", "dozo-overlay")'><img src="IMG/Thumbnails/Dozo-01.png"
+                                width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>DOZO</h3>
+                            <p>London</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>Dozo is the brainchild of an experienced restaurateur in London. First established in
+                                South Kensington in 2011, and has been serving premium-quality, contemporary, fine
+                                Japanese cuisine ever since.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Xuecong.png" width="30">
+                            <p>Xuecong</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cafe">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-eggham-on-toast.html", "eggham-on-toast-overlay")'><img
+                                src="IMG/Thumbnails/eggham_01.png" width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>EGGHAM ON TOAST</h3>
+                            <p>Egham</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>This little gem is located in the heart of Egham, it's a great place to visit with
+                                excellent friendly staff. With a wide range of delicious dishes from English/American
+                                style breakfasts, this cafe was one of the first cafe of its kind it Egham. Its great
+                                place to brunch with friends, have a discreet business breakfast or lunch meeting or
+                                just to come and relax and read the paper.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Aleks.jpg" width="30">
+                            <p>Aleks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card restaurant">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-jolene.html", "jolene-overlay")'><img
+                                src="IMG/Thumbnails/Jolene_3.jpeg" width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>JOLENE</h3>
+                            <p>London</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>Jolene is an all-day restaurant in a quiet spot opposite the park in Newington Green.
+                                During the daytime, it's a low-key brunch spot and bakery. Come evening, the candles are
+                                lit and the blackboards are replaced with a small-plates menu: think pasta, meats,
+                                cheeses and homemade bread.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Jess.jpg" width="30">
+                            <p>Jess</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card dessert">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-kaspas.html", "kaspas-overlay")'><img
+                                src="IMG/Thumbnails/kaspas_01.jpg" width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>KASPAS</h3>
+                            <p>Egham</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>Kaspa's are a chain of exciting new dessert houses that offer the world's favourite hot
+                                and cold desserts under one roof. The menu boasts a mouthwatering selection of ice
+                                creams, gelatos, waffles, crepes, milkshakes, smoothies and sundaes.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Aleks.jpg" width="30">
+                            <p>Aleks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card restaurant">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-kaspas.html", "kaspas-overlay")'><img
+                                src="IMG/Thumbnails/liberto_04.jpg" width="250"></button>
+
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>LIBERTO LOUNGE</h3>
+                            <p>Egham</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>Liberto Lounge is at the heart of the Magna Square development in Egham. It runs right
+                                along one side, with a lovely long terrace opening out onto the square at the front.
+                                Inside, it’s an eclectic mix of floral wallpaper, wood panelling, stained glass and
+                                exposed concrete ceilings. </p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Aleks.jpg" width="30">
+                            <p>Aleks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cafe">
+                    <div class="imgbox">
+                        <img src="IMG/Thumbnails/Merseymade-1.jpg" width="250">
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>MERSEYMADE</h3>
+                            <p>Liverpool</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>Merseymade is a coffee shop that has great drinks, food and doubles as a craft shop for
+                                independent Liverpool artists. I would highly recommend stopping by here if you are a
+                                tourist or a local for some nice coffee and to marvel at all of the beautiful artwork
+                                for sale.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Sam.png" width="30">
+                            <p>Samantha</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cafe">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-dozo.html", "dozo-overlay")'> <img
+                                src="IMG/Thumbnails/Pophams_3.jpg" width="250"></button>
+
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>POPHAMS</h3>
+                            <p>London</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>A cosy neighbourhood spot in London Fields which specialises in sourdough bread and
+                                incredible croissants by day, and a handful of pasta dishes by night. Keep an eye out
+                                for Pophams Home, their small homewares store next door, where they sell ceramics,
+                                candles, artworks and more.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Jess.jpg" width="30">
+                            <p>Jess</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card pub">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-pin.html", "pin-overlay")'><img
+                                src="IMG/Thumbnails/Pins-Social-Club_1.jpg" width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>PIN SOCIAL CLUB</h3>
+                            <p>Liverpool</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>PINS Social Club is the place you need to be if you want to have fun. They aren’t just a
+                                place to go for a drink, even if their drinks are incredible, they’re a venue for a full
+                                evening event.
+
+                                Drinks they do include Blood Orangecello, The Little Lebowski, If you fancy something to
+                                eat they do Sunday Roasts, Brunch, Pizzas, Burgers and so much more. Happy Hour is
+                                Monday to Fridays, 5-7pm, perfect for an after work catch up.
+
+                                You can also treat yourself to Bowling, as well as playing some American pool,
+                                Shuffleboard, ping pong, Beer Pong and also, a personal favourite, sing your heart out
+                                in their custom-made Karaoke room! They also have a rooftop area with live music,
+                                perfect for when it gets sunny in the summer months.</p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Sam.png" width="30">
+                            <p>Sam</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card pub">
+                    <div class="imgbox">
+                        <button onclick='on("overlay-kaspas.html", "kaspas-overlay")'><img
+                                src="IMG/Thumbnails/Bar_Shapes_2.jpeg" width="250"></button>
+                    </div>
+                    <div class="content">
+                        <div class="content-info">
+                            <h3>THE BAR WITH SHAPES FOR A NAME</h3>
+                            <p>London</p>
+                        </div>
+                        <div class="content-text">
+                            <hr>
+                            <p>A hidden gem on Kingsland Road. The name itself is not actually a name, rather a
+                                description of its label which is three Bauhaus-influenced primary-coloured shapes: a
+                                yellow triangle, a red square and a blue circle (but people call it Shapes for short).
+                                It has an almost classroom or educational feel to it and there are no bottles on show,
+                                making it difficult to know the venue is a bar if you didn't already know. Excellent
+                                cocktails in an unusual setting and decent value for money, which makes it a must visit.
+                            </p>
+                        </div>
+                        <div class="content-person">
+                            <img src="IMG/Avatars/Jess.jpg" width="30">
+                            <p>Jess</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <script src="search-script.js"></script> -->
+
+
+        <script defer src='search-script.js'></script>
+    </body>
+
+
+
+    <footer>
+        <hr class="line" ><br><br>
+        <p class="fheading">Still Hungry?</p>
+        <a class="footerlinks" href="#">About Us</a><br>
+        <a class="footerlinks" href="#">Contact</a><br>
+        <a class="footerlinks" href="#">References</a>
+
+
+    </footer>
+</body>
+
+</html>

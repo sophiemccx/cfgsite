@@ -1,0 +1,244 @@
+* {
+    margin: 10;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #DD7438;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: "Grape Nuts", sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+p {
+    font-size: 0.7em;
+}
+
+
+/* This controls the styling for the filter buttons: */
+
+.btn {
+    padding: 0.6em 2em;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8em;
+    border: 0;
+    cursor: pointer;
+    margin: 2px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.6
+}
+
+/* This controls the styling for the top four images, which are also buttons: */
+button {
+    border-style: none;
+    background-color: #ffffff;
+}
+
+
+/* .container – this holds all of the .cards : */
+.container {
+    margin-left: 65pt;
+    margin-right: 80pt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    min-height: 50vh;
+    position: relative;
+    max-width: 1350px;
+    flex-direction: column;
+}
+
+/* 1 .card per location : */
+.card {
+    display: flex;
+    position: relative;
+    background: #ffffff;
+    margin: 20px 0px 0px 40px;
+    padding: 10px;
+    float: left;
+
+    border: none;
+}
+
+/* 1 This is a container for the thumbnail image inside the card : */
+.imgbox {
+    max-width: 250px;
+    flex: 0 0 250px;
+    margin: 0px 20px 0px 0px;
+
+}
+
+/* 1 This is the thumbnail image, inside the container: */
+.imgbox img {
+    max-width: 100%;
+}
+
+/* 1 This is the location name and place, eg. Apple Butter, London : */
+.content-info {
+    display: flex;
+    flex-direction: row;
+    text-align: bottom;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+/* 1 This is the person avatar and name : */
+.content-person {
+    color: #676767;
+    display: flex;
+    column-gap: 8px;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    max-width: 90px;
+}
+
+.content-person img {
+    border-radius: 50%;
+}
+
+
+/* 1 Media queries to make it responsive : */
+
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .imgbox {
+        max-width: 100%;
+
+    }
+}
+
+
+/* Footer Styling */
+
+footer {
+    padding-top: 40pt;
+    background-color: white;
+    margin-left: 100pt;
+    padding-bottom: 100px;
+    margin-right: 80pt
+}
+
+.fheading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #134446;
+    margin-left: 10pt;
+
+
+
+}
+
+.footerlinks {
+    text-decoration: none;
+    color: black;
+    margin-left: 10pt;
+
+}
+
+
+.heading3 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heading4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+/* Navigation Styling */
+
+nav {
+
+    margin-left: 85pt;
+    margin-right: 85pt;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.line {
+    border-width: 2px;
+    border-radius: 100px;
+    width: 100%;
+}
+
+
+.button {
+    margin-top: 0px;
+}
+
+/* Added styling for margining */
+
+.items {
+    margin-left: 100pt;
+}
